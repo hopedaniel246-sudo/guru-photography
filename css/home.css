@@ -1,0 +1,903 @@
+/* ==========================================
+   1. HERO SECTION
+   ========================================== */
+.hero {
+    background-position: center center;
+    height: 90vh;
+    background-image: url("../assets/S.jpeg");
+    background-size: cover;
+    background-position: center;
+    font-family: "Mono Sans", sans-serif;
+    background-repeat: no-repeat;
+    padding: 0 6%;
+    display: flex;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.hero .container {
+    height: 100%;
+    width: 100%;
+}
+
+.hero .left-div, 
+.hero .right-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.hero .left-div .caption {
+    width: 200px;
+    height: 100px;
+}
+
+.hero .left-div .caption p {
+    text-align: right;
+    margin-top: -15px;
+}
+
+.hero .left-div .caption-body {
+    width: 300px;
+}
+
+.hero .left-div .caption-body span {
+    color: rgb(173, 169, 168);
+}
+
+.hero .right-div {
+    align-items: end;
+}
+
+/* Happy Clients */
+.hero .right-div .circle-container {
+    display: flex;
+}
+
+.hero .right-div .circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.hero .right-div .circle img {
+    width: 61px;
+    height: 61px;
+    border-radius: 50%;
+    border: 3px solid #f2f1f1;
+    object-fit: cover;
+}
+
+.hero .right-div .happy-client p {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.hero .right-div .happy-client .client1 {
+    z-index: 1;
+    margin-right: -10px;
+}
+
+.hero .right-div .happy-client .client2 {
+    z-index: 2;
+    margin-right: -10px;
+}
+
+.hero .right-div .happy-client .client3 {
+    z-index: 3;
+    margin-right: -10px;
+}
+
+.hero .right-div .happy-client .client4 {
+    z-index: 4;
+}
+
+.hero .right-div .card {
+    padding: 15px;
+    border-radius: 15px;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero .right-div .card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    border-radius: 15px;
+}
+
+.hero .right-div .card .chat-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    z-index: 1;
+}
+
+.hero .right-div .card h3 {
+    z-index: 1;
+}
+
+.hero .right-div .card .chat-container .btn {
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 20px;
+    color: #1f2937;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+/* ==========================================
+   2. ABOUT SECTION
+   ========================================== */
+main .about .header p {
+    text-align: right;
+    width: 80%;
+    font-weight: 400;
+}
+
+main .about .header p span {
+    font-style: italic;
+    font-weight: 300;
+    font-family: "Fira Sans", sans-serif;
+}
+
+main .about .content-container {
+    display: flex;
+    gap: 50px;
+    margin: 100px 0;
+}
+
+main .about .content-container img {
+    width: 50%;
+    height: 400px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+main .about .content-container .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main .about .content-container p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+main .about .content-container a {
+    display: inline-block;
+    width: fit-content;
+    text-decoration: none;
+    color: #1f2937;
+    font-size: 30px;
+}
+
+main .about .content-container a:hover {
+    color: #2563eb;
+}
+
+
+/* ==========================================
+   3. SERVICES SECTION
+   ========================================== */
+main .services {
+    margin: 100px 0;
+}
+
+main .services .header .caption {
+    display: flex;
+    justify-content: flex-end;
+}
+
+main .services .header h2 {
+    font-weight: 300;
+}
+
+main .services .header p {
+    font-family: "Fira Sans", sans-serif;
+    font-style: italic;
+    font-size: 48px;
+    text-align: right;
+    width: 80%;
+    font-weight: 400;
+}
+
+main .services .services-container {
+    display: flex;
+    gap: 50px;
+    margin: 100px 0;
+}
+
+main .services .services-container .card {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: white;
+}
+
+main .services .services-container .card h3 {
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+main .services .services-container .card p {
+    color: #8b9098;
+    font-size: 20px;
+}
+
+main .services .portraits {
+    display: flex;
+    gap: 50px;
+    margin: 100px 0;
+}
+
+
+main .services .portraits img {
+    width: 400px;
+    height: 500px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+main .services .portraits img:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+main .services .portraits img2, 
+main .services .portraits img4 {
+    margin-top: 100px;
+}
+
+
+/* ==========================================
+   4. FAQ SECTION
+   ========================================== */
+.faq-section {
+  max-height: 100vh;
+    margin: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
+.faq-container {
+    width: 100%;
+    max-width: 768px;
+    margin: auto;
+}
+.faq-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.faq-heading h2 {
+    font-size: clamp(28px, 5vw, 50px);
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 15px 0;
+}
+.faq-heading p {
+    font-size: 16px;
+    color: #8b9098;
+    line-height: 1.5;
+}
+
+.sub-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ef4444;
+}
+.sub-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #1f2937;
+    letter-spacing: 3px;
+}
+
+.faq-list {
+    display: grid;
+    gap: 20px;
+}
+
+.faq-item {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 20px;
+    background: transparent;
+    border: none;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1f2937;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.faq-item.active {
+    border-color: #2563eb;
+}
+
+.faq-container .icon {
+    flex-shrink: 0;
+    transition: transform 0.3s;
+}
+
+.faq-item.active .icon {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease-in-out;
+}
+
+.faq-answer p {
+    overflow: hidden;
+    padding: 0 22px;
+    color: #8b9098;
+    line-height: 1.6;
+}
+
+.faq-item.active .faq-answer {
+    grid-template-rows: 1fr;
+}
+
+.faq-item.active .faq-answer p {
+    padding-bottom: 22px;
+}
+
+
+
+
+/* ==========================================
+   5. TESTIMONIAL SECTION & CAROUSEL
+   ========================================== */
+.testimonial-section {
+    min-width: 100%;
+    min-height: 0;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.testimonial-container {
+    width: 100%;
+    max-width: 1100px;
+    min-width: 0;
+    margin: 0 auto;
+}
+
+.testimonial-heading {
+    width: 100%;
+    text-align: center;
+    color: #1f2937;
+    margin-bottom: 45px;
+}
+
+.testimonial-section .sub-title {
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.testimonial-section .testimonial-heading h2 {
+    font-size: clamp(28px, 5vw, 50px);
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 16px 0;
+}
+.testimonial-card .testimonial-user h3 {
+        font-size: 14px;
+    }
+.testimonial-section .testimonial-heading p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #1f2937;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.testimonial-carousel {
+    width: 100%;
+    max-width: 900px;
+    min-width: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 22px;
+}
+
+.testimonial-track {
+    display: flex;
+    width: 100%;
+    min-width: 0;
+    transition: transform 0.4s ease-in-out;
+    will-change: transform;
+}
+
+/* Testimonial Card Styles */
+.testimonial-card {
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 0;
+    padding: 45px 35px;
+    text-align: center;
+    overflow-wrap: anywhere;
+
+    background-color: rgba(225, 225, 225, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border: 1px solid #d1d5db;
+    border-radius: 22px;
+}
+
+.testimonial-card .quote-icon {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 75px;
+    line-height: 0.8;
+    color: #2563eb;
+}
+
+.testimonial-card .stars {
+    color: red;
+    font-size: 21px;
+    margin: 22px 0;
+    line-height: 1.2;
+}
+
+.testimonial-card .testimonial-text {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+
+/* Customer Profile inside Testimonial Card */
+.testimonial-card .testimonial-user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    width: 100%;
+    max-width: 100%;
+    min-height: 0;
+    text-align: left;
+}
+
+.testimonial-card .testimonial-user img {
+    width: 50px;
+    height: 50px;
+    flex: 0 0 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #efdb3d;
+}
+
+.testimonial-card .testimonial-user .info {
+    min-width: 0;
+}
+
+.testimonial-card .testimonial-user h3 {
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 0 0 7px 0;
+    overflow-wrap: anywhere;
+}
+
+.testimonial-card .testimonial-user span {
+    font-size: 13px;
+    color: #2563eb;
+    overflow-wrap: anywhere;
+}
+
+
+/* ==========================================
+   6. CAROUSEL CONTROLS & DOTS
+   ========================================== */
+.carousel-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.carousel-btn {
+    width: 44px;
+    height: 44px;
+    flex: 0 0 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #d1d5db;
+    border-radius: 50%;
+    background: #fff;
+    color: #1f2937;
+    font-size: 21px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.carousel-btn:hover {
+    background-color: #fdb03d;
+    color: #1f2937;
+}
+
+.carousel-btn:focus-visible,
+.carousel-dot:focus-visible {
+    outline: 2px solid #9905bc;
+    outline-offset: 4px;
+}
+
+/* Dots */
+.carousel-dot {
+    width: 9px;
+    height: 9px;
+    flex: 0 0 9px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: #9905b0;
+    cursor: pointer;
+    transition: width 0.3s, background-color 0.3s;
+}
+
+.carousel-dot.active {
+    width: 20px;
+    flex-basis: 20px;
+    border-radius: 10px;
+    background-color: #fdb03d;
+}
+/* Contact Section */
+.contact-section {
+    max-width: 700px;
+    margin: auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 2px 10px rgba(37, 99, 235, 0.2);
+}
+
+.contact-section h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #1f2937;
+}
+
+.contact-section p {
+    color: #2563eb;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.contact-section .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-section .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.contact-section .form-group input, 
+.contact-section .form-group textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #1f2937;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.contact-section .form-group input:focus, 
+.contact-section .form-group textarea:focus {
+    border-color: #efdb03;
+}
+
+.contact-section .form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact-section .submit-btn {
+    width: 100%;
+    padding: 15px;
+    color: rgb(81, 155, 75);
+    border: none;
+    border-radius: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-section .submit-btn:hover {
+    background-color:#01f293;
+}
+
+.contact-section .submit-btn:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+.contact-section .form-status {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.testimonial-card .testimonial-text {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Mobile view */
+@media (max-width: 760px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .contact-section {
+        padding: 25px 20px;
+    }
+
+    .contact-section h2 {
+        font-size: 27px;
+    }
+}
+
+/* Small phones */
+@media (max-width: 400px) {
+    .testimonial-section {
+        padding: 45px 12px;
+    }
+}
+/* Footer Styles */
+footer {
+  background-color: #1f2937;
+  color: white;
+  padding: 60px 8% 20px;
+}
+
+.footer-container {
+  grid-template-columns: 1fr 1fr;
+    gap: 35px 20px;
+}
+
+.footer-about,
+.footer-links,
+.footer-socials {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #01f293;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.footer-about p {
+  color: #9ca3af;
+  line-height: 1.6;
+}
+
+.footer-links h3,
+.footer-socials h3 {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.footer-links ul,
+.footer-socials ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li,
+.footer-socials li {
+  margin-bottom: 10px;
+}
+
+.footer-links a,
+.footer-socials a {
+  color: #9ca3af;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-socials a:hover {
+  color: #01f293;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 20px;
+  border-top: 1px solid #d1d5db;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 13px;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer ul li {
+  margin-bottom: 12px;
+}
+
+.footer ul li a {
+  color: #d1d5db;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.back-to-top {
+  color: #01f293;
+  text-decoration: none;
+}
+
+.back-to-top:hover {
+  text-decoration: underline;
+}
+.footer-about {
+    grid-column: 1 / -1;
+  }
+
+.footer ul li a:hover, .footer, .back-to-top:hover{
+    color: rgba(86, 89, 9, 0.429);
+}
+
+/* ==========================================
+   7. RESPONSIVE MEDIA QUERIES
+   ========================================== */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero .left-div .caption-body {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+        text-align: right;
+    }
+
+    .hero .left-div .caption {
+        width: 100%;
+    }
+
+    main .about .header p {
+        font-size: 38px;
+        width: 100%;
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    main .about .content-container {
+        flex-direction: column;
+    }
+
+    main .about .content-container img {
+        width: 100%;
+    }
+
+    main .about .content-container p {
+        font-size: 16px;
+    }
+
+    main .about .content-container a {
+        font-size: 20px;
+        margin-top: 20px;
+        padding: 10px 20px;
+        border-radius: 20px;
+        border: 1px solid #1f2937;
+    }
+
+    main .services .header .caption {
+        flex-direction: column;
+    }
+
+    main .services .header p {
+        font-size: 18px;
+        text-align: left;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    main .services .services-container {
+        flex-direction: column;
+    }
+
+    main .services .portraits {
+        flex-direction: column;
+    }
+
+    main .services .portraits img2, 
+    main .services .portraits img4 {
+        margin-top: 0;
+    }
+
+    main .services .portraits img {
+        width: auto;
+    }
+
+    .faq-section {
+        margin: 60px 16px;
+    }
+
+    .faq-heading {
+        margin-bottom: 30px;
+    }
+
+    .faq-question {
+        font-size: 14px;
+        padding: 16px;
+    }
+}
+
+/* ==========================================
+   8. ACCESSIBILITY: REDUCED MOTION
+   ========================================== */
+@media (prefers-reduced-motion: reduce) {
+    .testimonial-track,
+    .carousel-btn,
+    .carousel-dot {
+        transition: none;
+    }
+}

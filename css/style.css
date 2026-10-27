@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    background-color: #f5f7fa;
+    color: #1f2937;
+}
+
+/* Navbar */
+.navbar {
+    height: 70px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #2563eb;
+    text-decoration: none;
+}
+
+/* Desktop links */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #4b5563;
+    font-weight: 500;
+    font-size: 15px;
+    transition: 0.03s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #2563eb;
+}
+
+/* Hamburger */
+.menu-btn {
+    display: none;
+    border: none;
+    background-color: transparent;
+    font-size: 27px;
+    cursor: pointer;
+}
+
+/* Overlay */
+.overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+    z-index: 1500;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Drawer navigation */
+.drawer {
+    position: fixed;
+    top: 0;
+    right: -320px;
+    width: 300px;
+    height: 100vh;
+    background-color: white;
+    padding: 25px;
+    transition: right 0.3s ease;
+    z-index: 2000;
+}
+
+.drawer.open {
+    right: 0;
+}
+
+.close-btn {
+    border: none;
+    background-color: #f1f5f9;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    font-size: 27px;
+    cursor: pointer;
+}
+
+.drawer-links {
+    list-style: none;
+    margin-top: 25px;
+}
+
+.drawer-links li {
+    margin-top: 8px;
+}
+
+.drawer-links a {
+    display: block;
+    padding: 14px 12px;
+    text-decoration: none;
+    color: #374151;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.drawer-links a:hover, .drawer-links a.active {
+    background-color: #eff6ff;
+    color: #2563eb;
+}
+
+/* Mobile view */
+@media (max-width: 760px) {
+    .nav-links {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .navbar {
+        padding: 0 5%;
+    }
+}

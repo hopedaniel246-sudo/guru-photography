@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text-red {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="time">Timer: <span class="mins">2</span>:<span class="secs">00</span></h1>
+    <p>Hello</p>
+    <p>How are you?</p>
+
+    <script>
+        // spread operator
+        const players = ["CR7", "Benzema", "Messi"];
+
+        const legend = [...players, "Pele", "Maradona"];
+         console.log(legend);
+
+        const p = document.querySelectorAll("p");
+        console.log([...p]);
+
+        // setTimeout, setInterval
+        // setTimeout(function(){
+        //     alert("Welcome!");
+        // }, 10000);
+
+        let secs = 60;
+        let mins = 1;
+
+        const timerElement = document.querySelector(".time");
+
+        let timerid = setInterval(function(){
+            secs = secs - 1;
+            if(secs == 0 && mins > 0){
+                mins = mins - 1;
+                secs = 59;
+            }
+            document.querySelector(".mins").innerText = `${mins < 10 ? "0" + mins : mins}`;
+            document.querySelector(".secs").innerText = `${secs < 10 ? "0" + secs : secs}`;
+
+            if (mins === 0) {
+                timerElement.classList.add("text-red");
+            }
+
+            if(secs == 0 && mins == 0){
+                clearInterval(timerid);
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
